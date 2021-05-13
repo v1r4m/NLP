@@ -58,3 +58,7 @@ for i, tweet in enumerate(cursor.items()):
 #    wfile.write(tweet.text + '\n')
 
 #wfile.close()
+
+#https://liveyourit.tistory.com/57
+#https://wikidocs.net/43280
+#https://jeongwookie.github.io/2019/06/10/190610-twitter-data-crawling/
