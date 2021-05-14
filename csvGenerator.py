@@ -2,9 +2,14 @@
 import tweepy 
 
 import pandas as pd
-import os        
+import os
 
 import sys
+
+import csv
+
+from konlpy.utils import pprint
+from konlpy.tag import Okt
 
 
 #sys.setdefaultencoding('utf-8')
@@ -31,11 +36,13 @@ api = tweepy.API(auth)
 
 location = "%s,%s,%s" % ("35.95", "128.25", "1000km")  # 검색기준(대한민국 중심) 좌표, 반지름  
 
-keyword = "나비 -filter:retweets"                                      # OR 로 검색어 묶어줌, 검색어 5개(반드시 OR 대문자로)                             
+keyword = "중앙대 -filter:retweets"                                      # OR 로 검색어 묶어줌, 검색어 5개(반드시 OR 대문자로)                             
 
 # wfile = open(os.getcwd()+"/twitter.txt", mode='w')        # 텍스트 파일로 출력(쓰기모드)
 
 # twitter 검색 cursor 선언
+f = open('write.csv','w', newline='')
+wr = csv.writer(f)
 
 cursor = tweepy.Cursor(api.search, 
 
@@ -43,15 +50,41 @@ cursor = tweepy.Cursor(api.search,
 
                        since='2015-01-01', # 2015-01-01 이후에 작성된 트윗들로 가져옴
 
-                       count=100,  # 페이지당 반환할 트위터 수 최대 100
+                       count=300,  # 페이지당 반환할 트위터 수 최대 100
 
                        geocode=location,
 
                        include_entities=True)
-
+okt = Okt()
 for i, tweet in enumerate(cursor.items()):
+    noun = okt.nouns(tweet.text)
+    for i, v in enumerate(noun):
+        if len(v)<2:
+            noun.pop(i)
+    print(noun)
+    wr.writerow(noun)
 
-    print("{}: {}".format(i, tweet.text))
+keyword = "나비 -filter:retweets"
+cursor = tweepy.Cursor(api.search, 
+
+                       q=keyword,
+
+                       since='2015-01-01', # 2015-01-01 이후에 작성된 트윗들로 가져옴
+
+                       count=300,  # 페이지당 반환할 트위터 수 최대 100
+
+                       geocode=location,
+
+                       include_entities=True)
+for i, tweet in enumerate(cursor.items()):
+    noun = okt.nouns(tweet.text)
+    for i, v in enumerate(noun):
+        if len(v)<2:
+            noun.pop(i)
+    print(noun)
+    wr.writerow(noun)
+
+f.close()
 
 #twitter_df = pd.DataFrame(tweet_list
 
