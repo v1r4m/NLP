@@ -57,12 +57,17 @@ cursor = tweepy.Cursor(api.search,
                        include_entities=True)
 okt = Okt()
 for i, tweet in enumerate(cursor.items()):
+
     noun = okt.nouns(tweet.text)
     for i, v in enumerate(noun):
         if len(v)<2:
             noun.pop(i)
+    for i in range(len(noun)):
+        for j in range(len(noun)):
+            if i!=j:
+                k = [noun[i], noun[j]]
+                wr.writerow(k)
     print(noun)
-    wr.writerow(noun)
 
 keyword = "나비 -filter:retweets"
 cursor = tweepy.Cursor(api.search, 
@@ -79,10 +84,14 @@ cursor = tweepy.Cursor(api.search,
 for i, tweet in enumerate(cursor.items()):
     noun = okt.nouns(tweet.text)
     for i, v in enumerate(noun):
-        if len(v)<2:
+        if len(v) < 2:
             noun.pop(i)
+    for i in range(len(noun)):
+        for j in range(len(noun)):
+            if i != j:
+                k = [noun[i], noun[j]]
+                wr.writerow(k)
     print(noun)
-    wr.writerow(noun)
 
 f.close()
 
