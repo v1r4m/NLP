@@ -1,1 +1,0 @@
-from nlpdjango.models.nlp import Tquery
