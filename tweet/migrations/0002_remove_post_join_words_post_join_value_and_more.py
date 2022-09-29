@@ -18,13 +18,13 @@ class Migration(migrations.Migration):
         migrations.AddField(
             model_name='post',
             name='join_value',
-            field=models.IntegerField(default=django.utils.timezone.now),
+            field=models.IntegerField(default=0),
             preserve_default=False,
         ),
         migrations.AddField(
             model_name='post',
             name='join_word',
-            field=models.CharField(default=django.utils.timezone.now, max_length=10),
+            field=models.CharField(default="null", max_length=10),
             preserve_default=False,
         ),
         migrations.AlterField(

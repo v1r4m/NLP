@@ -6,7 +6,8 @@ class Post(models.Model):
     pkWord = models.CharField(max_length=10)
     pkLink = models.TextField()
     join_word = models.CharField(max_length=10)
-    join_value = models.IntegerField()
+    join_v = models.IntegerField()
+    published_date = models.DateTimeField(blank=True, null=True)
     #pk = models.ForeignKey('tweet.Link') #####
     #pkWord = models.CharField(max_length=10)
 
@@ -15,5 +16,5 @@ class Post(models.Model):
         self.save()
 
     def __str__(self):
-        return self.pkLink
+        return self.pkWord
 
