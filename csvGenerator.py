@@ -3,6 +3,10 @@ import tweepy
 
 import pandas as pd
 import os
+os.environ.setdefault("DJANGO_SETTINGS_MODULE", "nlpdjango.settings")
+import django
+django.setup()
+from tweet.models import Post
 
 import sys
 
@@ -16,13 +20,13 @@ from konlpy.tag import Okt
 
 
 
-consumer_key = "kZADq17e01p6ILN0u3vdgU1DH"
+consumer_key = "xmOz1rvy91vgY7kF5Ugug"
 
-consumer_secret = "7bKnY3aGD1LZIDWbS6tVzru8zFZNV492oN9I51g7b6HctxC8Kb"
+consumer_secret = "nSnbWQOB34nFauQfsXGtHfEjs1yXFGGglXAAXaBcU"
 
-access_token = "266449908-riSJfN9LFhHcRlm2NNkaA2EA30JGHEZf5rBnJPZR"
+access_token = "1140581090-4t6E03lbmFPXJryvTzhfv8HMLti3Ep5HON2BzEp"
 
-access_token_secret = "BZVZx7nxSAYbsYkpCnPQLpVVlQyFMFIaZ2T49vSbPFasE"
+access_token_secret = "zM83khBCKD0y5oAaPIY5ahzYQoX61jOnk670YjPNg4"
 
 
 
@@ -32,7 +36,9 @@ auth.set_access_token(access_token, access_token_secret)
 
 api = tweepy.API(auth)  
 
-
+public_tweets = api.home_timeline()
+for tweet in public_tweets:
+    print(tweet.text)
 
 location = "%s,%s,%s" % ("35.95", "128.25", "1000km")  # 검색기준(대한민국 중심) 좌표, 반지름  
 
@@ -44,7 +50,7 @@ keyword = "중앙대 -filter:retweets"                                      # OR
 f = open('write.csv','w', newline='')
 wr = csv.writer(f)
 
-cursor = tweepy.Cursor(api.search, 
+cursor = tweepy.Cursor(api.search_tweets, 
 
                        q=keyword,
 
@@ -65,33 +71,39 @@ for i, tweet in enumerate(cursor.items()):
     for i in range(len(noun)):
         for j in range(len(noun)):
             if i!=j:
-                k = [noun[i], noun[j]]
-                wr.writerow(k)
+#                k = [noun[i], noun[j]]
+#                wr.writerow(k)
+                Post(
+                    pkWord = noun[i],
+                    pkLink = 'null',
+                    join_word = noun[j],
+                    join_v = 0,
+                ).save()
     print(noun)
 
-keyword = "나비 -filter:retweets"
-cursor = tweepy.Cursor(api.search, 
+# keyword = "나비 -filter:retweets"
+# cursor = tweepy.Cursor(api.search, 
 
-                       q=keyword,
+#                        q=keyword,
 
-                       since='2015-01-01', # 2015-01-01 이후에 작성된 트윗들로 가져옴
+#                        since='2015-01-01', # 2015-01-01 이후에 작성된 트윗들로 가져옴
 
-                       count=300,  # 페이지당 반환할 트위터 수 최대 100
+#                        count=300,  # 페이지당 반환할 트위터 수 최대 100
 
-                       geocode=location,
+#                        geocode=location,
 
-                       include_entities=True)
-for i, tweet in enumerate(cursor.items()):
-    noun = okt.nouns(tweet.text)
-    for i, v in enumerate(noun):
-        if len(v) < 2:
-            noun.pop(i)
-    for i in range(len(noun)):
-        for j in range(len(noun)):
-            if i != j:
-                k = [noun[i], noun[j]]
-                wr.writerow(k)
-    print(noun)
+#                        include_entities=True)
+# for i, tweet in enumerate(cursor.items()):
+#     noun = okt.nouns(tweet.text)
+#     for i, v in enumerate(noun):
+#         if len(v) < 2:
+#             noun.pop(i)
+#     for i in range(len(noun)):
+#         for j in range(len(noun)):
+#             if i != j:
+#                 k = [noun[i], noun[j]]
+#                 wr.writerow(k)
+#     print(noun)
 
 f.close()
 
