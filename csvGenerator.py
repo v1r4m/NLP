@@ -15,24 +15,17 @@ import csv
 from konlpy.utils import pprint
 from konlpy.tag import Okt
 
+import config
+
 
 #sys.setdefaultencoding('utf-8')
 
 
 
-consumer_key = "xmOz1rvy91vgY7kF5Ugug"
 
-consumer_secret = "nSnbWQOB34nFauQfsXGtHfEjs1yXFGGglXAAXaBcU"
+auth = tweepy.OAuthHandler(config.consumer_key, config.consumer_secret)
 
-access_token = "1140581090-4t6E03lbmFPXJryvTzhfv8HMLti3Ep5HON2BzEp"
-
-access_token_secret = "zM83khBCKD0y5oAaPIY5ahzYQoX61jOnk670YjPNg4"
-
-
-
-auth = tweepy.OAuthHandler(consumer_key, consumer_secret)
-
-auth.set_access_token(access_token, access_token_secret)
+auth.set_access_token(config.access_token, config.access_token_secret)
 
 api = tweepy.API(auth)  
 
