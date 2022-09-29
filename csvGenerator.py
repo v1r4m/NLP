@@ -1,4 +1,5 @@
 
+from asyncio.windows_events import NULL
 import tweepy 
 
 import pandas as pd
@@ -29,9 +30,9 @@ auth.set_access_token(config.access_token, config.access_token_secret)
 
 api = tweepy.API(auth)  
 
-public_tweets = api.home_timeline()
-for tweet in public_tweets:
-    print(tweet.text)
+# public_tweets = api.home_timeline()
+# for tweet in public_tweets:
+#     print(tweet.text)
 
 location = "%s,%s,%s" % ("35.95", "128.25", "1000km")  # 검색기준(대한민국 중심) 좌표, 반지름  
 
@@ -55,23 +56,35 @@ cursor = tweepy.Cursor(api.search_tweets,
 
                        include_entities=True)
 okt = Okt()
+qs = Post.objects.all()
+print(qs[5].join_word)
 for i, tweet in enumerate(cursor.items()):
 
     noun = okt.nouns(tweet.text)
     for i, v in enumerate(noun):
         if len(v)<2:
             noun.pop(i)
+    sorted(noun)
     for i in range(len(noun)):
-        for j in range(len(noun)):
+        for j in range(i,len(noun)):
             if i!=j:
-#                k = [noun[i], noun[j]]
-#                wr.writerow(k)
-                Post(
-                    pkWord = noun[i],
-                    pkLink = 'null',
-                    join_word = noun[j],
-                    join_v = 0,
-                ).save()
+                # k = [noun[i], noun[j]]
+                # wr.writerow(k)
+
+                query = qs.filter(pkWord=noun[i]).filter(join_word = noun[j])
+                print(query)
+#                jvlist = [e.join_v for e in query.all()]
+                # if len(jvlist) != 0:
+                #     query.update(join_v=)
+                if len(query) != 0:
+                    query.update(join_v=query[0].join_v+1)
+                else:
+                    Post(
+                        pkWord = noun[i],
+                        pkLink = 'null',
+                        join_word = noun[j],
+                        join_v = 0,
+                    ).save()
     print(noun)
 
 # keyword = "나비 -filter:retweets"
