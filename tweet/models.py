@@ -4,7 +4,6 @@ from django.utils import timezone
 
 class Post(models.Model):
     pkWord = models.CharField(max_length=10)
-    pkLink = models.TextField()
     join_word = models.CharField(max_length=10)
     join_v = models.IntegerField()
     published_date = models.DateTimeField(blank=True, null=True)
@@ -18,3 +17,8 @@ class Post(models.Model):
     def __str__(self):
         return self.pkWord
 
+class LatestLink(models.Model):
+    link = models.CharField(max_length=19)
+
+    def __str__(self):
+        return self.link

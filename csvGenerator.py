@@ -7,7 +7,7 @@ import os
 os.environ.setdefault("DJANGO_SETTINGS_MODULE", "nlpdjango.settings")
 import django
 django.setup()
-from tweet.models import Post
+from tweet.models import Post, LatestLink
 
 import sys
 
@@ -41,50 +41,48 @@ keyword = "중앙대 -filter:retweets"                                      # OR
 # wfile = open(os.getcwd()+"/twitter.txt", mode='w')        # 텍스트 파일로 출력(쓰기모드)
 
 # twitter 검색 cursor 선언
-f = open('write.csv','w', newline='')
-wr = csv.writer(f)
+# f = open('write.csv','w', newline='')
+# wr = csv.writer(f)
 
 cursor = tweepy.Cursor(api.search_tweets, 
-
                        q=keyword,
-
                        since='2015-01-01', # 2015-01-01 이후에 작성된 트윗들로 가져옴
-
-                       count=300,  # 페이지당 반환할 트위터 수 최대 100
-
+                       count=10,  # 페이지당 반환할 트위터 수 최대 100
                        geocode=location,
-
                        include_entities=True)
 okt = Okt()
 qs = Post.objects.all()
-print(qs[5].join_word)
+#print(qs[5].join_word)
 for i, tweet in enumerate(cursor.items()):
+    print(tweet.id)
+    if tweet.id != LatestLink.objects.all()[0].link:
+        LatestLink.objects.all().update(link = tweet.id)
+        noun = okt.nouns(tweet.text)
+        for i, v in enumerate(noun):
+            if len(v)<2:
+                noun.pop(i)
+        sorted(noun)
+        for i in range(len(noun)):
+            for j in range(i,len(noun)):
+                if i!=j:
+                    # k = [noun[i], noun[j]]
+                    # wr.writerow(k)
 
-    noun = okt.nouns(tweet.text)
-    for i, v in enumerate(noun):
-        if len(v)<2:
-            noun.pop(i)
-    sorted(noun)
-    for i in range(len(noun)):
-        for j in range(i,len(noun)):
-            if i!=j:
-                # k = [noun[i], noun[j]]
-                # wr.writerow(k)
-
-                query = qs.filter(pkWord=noun[i]).filter(join_word = noun[j])
-                print(query)
-#                jvlist = [e.join_v for e in query.all()]
-                # if len(jvlist) != 0:
-                #     query.update(join_v=)
-                if len(query) != 0:
-                    query.update(join_v=query[0].join_v+1)
-                else:
-                    Post(
-                        pkWord = noun[i],
-                        pkLink = 'null',
-                        join_word = noun[j],
-                        join_v = 0,
-                    ).save()
+                    query = qs.filter(pkWord=noun[i]).filter(join_word = noun[j])
+    #                print(query)
+    #                jvlist = [e.join_v for e in query.all()]
+                    # if len(jvlist) != 0:
+                    #     query.update(join_v=)
+                    if len(query) != 0:
+                        query.update(join_v=query[0].join_v+1)
+                    else:
+                        Post(
+                            pkWord = noun[i],
+                            join_word = noun[j],
+                            join_v = 0,
+                        ).save()
+    else:
+        print("no tweets updated.")
     print(noun)
 
 # keyword = "나비 -filter:retweets"
@@ -111,7 +109,7 @@ for i, tweet in enumerate(cursor.items()):
 #                 wr.writerow(k)
 #     print(noun)
 
-f.close()
+# f.close()
 
 #twitter_df = pd.DataFrame(tweet_list
 
