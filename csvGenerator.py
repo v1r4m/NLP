@@ -35,8 +35,8 @@ api = tweepy.API(auth)
 #     print(tweet.text)
 
 location = "%s,%s,%s" % ("35.95", "128.25", "1000km")  # 검색기준(대한민국 중심) 좌표, 반지름  
-
-keyword = "중앙대 -filter:retweets"                                      # OR 로 검색어 묶어줌, 검색어 5개(반드시 OR 대문자로)                             
+kword = "중앙대"
+keyword = kword+" -filter:retweets"                                      # OR 로 검색어 묶어줌, 검색어 5개(반드시 OR 대문자로)                             
 
 # wfile = open(os.getcwd()+"/twitter.txt", mode='w')        # 텍스트 파일로 출력(쓰기모드)
 
@@ -53,9 +53,9 @@ cursor = tweepy.Cursor(api.search_tweets,
 okt = Okt()
 qs = Post.objects.all()
 #print(qs[5].join_word)
-for i, tweet in enumerate(cursor.items()):
-    print(tweet.id)
-    if tweet.id != LatestLink.objects.all()[0].link:
+
+def crud(tweet, linkquery):
+    if tweet.id != linkquery.link:
         LatestLink.objects.all().update(link = tweet.id)
         noun = okt.nouns(tweet.text)
         for i, v in enumerate(noun):
@@ -65,14 +65,7 @@ for i, tweet in enumerate(cursor.items()):
         for i in range(len(noun)):
             for j in range(i,len(noun)):
                 if i!=j:
-                    # k = [noun[i], noun[j]]
-                    # wr.writerow(k)
-
                     query = qs.filter(pkWord=noun[i]).filter(join_word = noun[j])
-    #                print(query)
-    #                jvlist = [e.join_v for e in query.all()]
-                    # if len(jvlist) != 0:
-                    #     query.update(join_v=)
                     if len(query) != 0:
                         query.update(join_v=query[0].join_v+1)
                     else:
@@ -82,8 +75,18 @@ for i, tweet in enumerate(cursor.items()):
                             join_v = 0,
                         ).save()
     else:
-        print("no tweets updated.")
-    print(noun)
+            print("no tweets updated.")
+
+for i, tweet in enumerate(cursor.items()):
+    print(tweet.id)
+    linkquery = LatestLink.objects.all().filter(word=kword)
+    if len(linkquery)!=0:
+        crud(tweet, linkquery[0])
+    else:
+        LatestLink(
+            link = tweet.id,
+            word = kword,
+        ).save()
 
 # keyword = "나비 -filter:retweets"
 # cursor = tweepy.Cursor(api.search, 
