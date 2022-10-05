@@ -1,0 +1,2087 @@
+{
+    "nodes": [
+        {
+            "id": "디스커버리",
+            "group": 4
+        },
+        {
+            "id": "잠적",
+            "group": 4
+        },
+        {
+            "id": "티저",
+            "group": 4
+        },
+        {
+            "id": "가슴",
+            "group": 4
+        },
+        {
+            "id": "배경",
+            "group": 4
+        },
+        {
+            "id": "목소리",
+            "group": 4
+        },
+        {
+            "id": "음악",
+            "group": 4
+        },
+        {
+            "id": "진영",
+            "group": 4
+        },
+        {
+            "id": "태호",
+            "group": 4
+        },
+        {
+            "id": "슬리퍼",
+            "group": 4
+        },
+        {
+            "id": "지난달",
+            "group": 8
+        },
+        {
+            "id": "인기",
+            "group": 8
+        },
+        {
+            "id": "개",
+            "group": 9
+        },
+        {
+            "id": "추천",
+            "group": 8
+        },
+        {
+            "id": "사용",
+            "group": 8
+        },
+        {
+            "id": "후기",
+            "group": 8
+        },
+        {
+            "id": "스타트렉",
+            "group": 9
+        },
+        {
+            "id": "매스이펙트",
+            "group": 9
+        },
+        {
+            "id": "시리즈",
+            "group": 9
+        },
+        {
+            "id": "택배",
+            "group": 9
+        },
+        {
+            "id": "포함",
+            "group": 9
+        },
+        {
+            "id": "약간",
+            "group": 9
+        },
+        {
+            "id": "단체",
+            "group": 9
+        },
+        {
+            "id": "가습기",
+            "group": 9
+        },
+        {
+            "id": "살균제",
+            "group": 4
+        },
+        {
+            "id": "유해",
+            "group": 4
+        },
+        {
+            "id": "물질",
+            "group": 5
+        },
+        {
+            "id": "제대로",
+            "group": 4
+        },
+        {
+            "id": "표시",
+            "group": 2
+        },
+        {
+            "id": "제조",
+            "group": 8
+        },
+        {
+            "id": "유통",
+            "group": 9
+        },
+        {
+            "id": "책임자",
+            "group": 8
+        },
+        {
+            "id": "케미칼",
+            "group": 8
+        },
+        {
+            "id": "대표이사",
+            "group": 8
+        },
+        {
+            "id": "부회장",
+            "group": 8
+        },
+        {
+            "id": "창원",
+            "group": 8
+        },
+        {
+            "id": "옥시",
+            "group": 8
+        },
+        {
+            "id": "현직",
+            "group": 8
+        },
+        {
+            "id": "살균",
+            "group": 8
+        },
+        {
+            "id": "제품",
+            "group": 4
+        },
+        {
+            "id": "남자",
+            "group": 4
+        },
+        {
+            "id": "확인",
+            "group": 4
+        },
+        {
+            "id": "봣으면",
+            "group": 4
+        },
+        {
+            "id": "커비",
+            "group": 4
+        },
+        {
+            "id": "흥정",
+            "group": 4
+        }
+    ],"links": [
+        {
+            "id": 6657,
+            "source": "잠적",
+            "target": "티저",
+            "value": 2
+        },
+        {
+            "id": 6658,
+            "source": "잠적",
+            "target": "가슴",
+            "value": 2
+        },
+        {
+            "id": 6659,
+            "source": "잠적",
+            "target": "배경",
+            "value": 2
+        },
+        {
+            "id": 6662,
+            "source": "잠적",
+            "target": "목소리",
+            "value": 2
+        },
+        {
+            "id": 6664,
+            "source": "잠적",
+            "target": "음악",
+            "value": 2
+        },
+        {
+            "id": 6668,
+            "source": "잠적",
+            "target": "진영",
+            "value": 2
+        },
+        {
+            "id": 6669,
+            "source": "잠적",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6664,
+            "source": "티저",
+            "target": "가슴",
+            "value": 2
+        },
+        {
+            "id": 6665,
+            "source": "티저",
+            "target": "배경",
+            "value": 2
+        },
+        {
+            "id": 6666,
+            "source": "티저",
+            "target": "목소리",
+            "value": 2
+        },
+        {
+            "id": 6667,
+            "source": "티저",
+            "target": "음악",
+            "value": 2
+        },
+        {
+            "id": 6668,
+            "source": "티저",
+            "target": "진영",
+            "value": 2
+        },
+        {
+            "id": 6669,
+            "source": "티저",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6672,
+            "source": "가슴",
+            "target": "배경",
+            "value": 2
+        },
+        {
+            "id": 6674,
+            "source": "가슴",
+            "target": "목소리",
+            "value": 2
+        },
+        {
+            "id": 6678,
+            "source": "가슴",
+            "target": "음악",
+            "value": 2
+        },
+        {
+            "id": 6679,
+            "source": "가슴",
+            "target": "진영",
+            "value": 2
+        },
+        {
+            "id": 6674,
+            "source": "가슴",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6675,
+            "source": "배경",
+            "target": "목소리",
+            "value": 2
+        },
+        {
+            "id": 6676,
+            "source": "배경",
+            "target": "음악",
+            "value": 2
+        },
+        {
+            "id": 6677,
+            "source": "배경",
+            "target": "진영",
+            "value": 2
+        },
+        {
+            "id": 6678,
+            "source": "배경",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6679,
+            "source": "목소리",
+            "target": "음악",
+            "value": 2
+        },
+        {
+            "id": 6682,
+            "source": "목소리",
+            "target": "진영",
+            "value": 2
+        },
+        {
+            "id": 6684,
+            "source": "목소리",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6688,
+            "source": "음악",
+            "target": "진영",
+            "value": 2
+        },
+        {
+            "id": 6689,
+            "source": "음악",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6684,
+            "source": "진영",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6685,
+            "source": "디스커버리",
+            "target": "태호",
+            "value": 2
+        },
+        {
+            "id": 6686,
+            "source": "디스커버리",
+            "target": "남자",
+            "value": 2
+        },
+        {
+            "id": 6687,
+            "source": "태호",
+            "target": "남자",
+            "value": 2
+        },
+        {
+            "id": 6688,
+            "source": "디스커버리",
+            "target": "슬리퍼",
+            "value": 2
+        },
+        {
+            "id": 6689,
+            "source": "디스커버리",
+            "target": "지난달",
+            "value": 2
+        },
+        {
+            "id": 6692,
+            "source": "디스커버리",
+            "target": "인기",
+            "value": 2
+        },
+        {
+            "id": 6694,
+            "source": "디스커버리",
+            "target": "개",
+            "value": 2
+        },
+        {
+            "id": 6698,
+            "source": "디스커버리",
+            "target": "추천",
+            "value": 2
+        },
+        {
+            "id": 6699,
+            "source": "디스커버리",
+            "target": "사용",
+            "value": 2
+        },
+        {
+            "id": 6694,
+            "source": "디스커버리",
+            "target": "후기",
+            "value": 2
+        },
+        {
+            "id": 6695,
+            "source": "디스커버리",
+            "target": "확인",
+            "value": 2
+        },
+        {
+            "id": 6696,
+            "source": "슬리퍼",
+            "target": "지난달",
+            "value": 2
+        },
+        {
+            "id": 6697,
+            "source": "슬리퍼",
+            "target": "인기",
+            "value": 2
+        },
+        {
+            "id": 6698,
+            "source": "슬리퍼",
+            "target": "개",
+            "value": 2
+        },
+        {
+            "id": 6699,
+            "source": "슬리퍼",
+            "target": "추천",
+            "value": 2
+        },
+        {
+            "id": 6722,
+            "source": "슬리퍼",
+            "target": "사용",
+            "value": 2
+        },
+        {
+            "id": 6724,
+            "source": "슬리퍼",
+            "target": "후기",
+            "value": 2
+        },
+        {
+            "id": 6728,
+            "source": "슬리퍼",
+            "target": "확인",
+            "value": 2
+        },
+        {
+            "id": 6729,
+            "source": "지난달",
+            "target": "인기",
+            "value": 2
+        },
+        {
+            "id": 6724,
+            "source": "지난달",
+            "target": "개",
+            "value": 2
+        },
+        {
+            "id": 6725,
+            "source": "지난달",
+            "target": "추천",
+            "value": 2
+        },
+        {
+            "id": 6726,
+            "source": "지난달",
+            "target": "사용",
+            "value": 2
+        },
+        {
+            "id": 6727,
+            "source": "지난달",
+            "target": "후기",
+            "value": 2
+        },
+        {
+            "id": 6728,
+            "source": "지난달",
+            "target": "확인",
+            "value": 2
+        },
+        {
+            "id": 6729,
+            "source": "인기",
+            "target": "개",
+            "value": 2
+        },
+        {
+            "id": 6742,
+            "source": "인기",
+            "target": "추천",
+            "value": 2
+        },
+        {
+            "id": 6744,
+            "source": "인기",
+            "target": "사용",
+            "value": 2
+        },
+        {
+            "id": 6748,
+            "source": "인기",
+            "target": "후기",
+            "value": 2
+        },
+        {
+            "id": 6749,
+            "source": "인기",
+            "target": "확인",
+            "value": 2
+        },
+        {
+            "id": 6744,
+            "source": "개",
+            "target": "추천",
+            "value": 2
+        },
+        {
+            "id": 6745,
+            "source": "개",
+            "target": "사용",
+            "value": 2
+        },
+        {
+            "id": 6746,
+            "source": "개",
+            "target": "후기",
+            "value": 2
+        },
+        {
+            "id": 6747,
+            "source": "개",
+            "target": "확인",
+            "value": 2
+        },
+        {
+            "id": 6748,
+            "source": "추천",
+            "target": "사용",
+            "value": 2
+        },
+        {
+            "id": 6749,
+            "source": "추천",
+            "target": "후기",
+            "value": 2
+        },
+        {
+            "id": 6782,
+            "source": "추천",
+            "target": "확인",
+            "value": 2
+        },
+        {
+            "id": 6784,
+            "source": "사용",
+            "target": "후기",
+            "value": 2
+        },
+        {
+            "id": 6788,
+            "source": "사용",
+            "target": "확인",
+            "value": 2
+        },
+        {
+            "id": 6789,
+            "source": "후기",
+            "target": "확인",
+            "value": 2
+        },
+        {
+            "id": 6784,
+            "source": "스타트렉",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6785,
+            "source": "스타트렉",
+            "target": "매스이펙트",
+            "value": 2
+        },
+        {
+            "id": 6786,
+            "source": "스타트렉",
+            "target": "스타트렉",
+            "value": 2
+        },
+        {
+            "id": 6787,
+            "source": "스타트렉",
+            "target": "시리즈",
+            "value": 4
+        },
+        {
+            "id": 6788,
+            "source": "스타트렉",
+            "target": "봣으면",
+            "value": 4
+        },
+        {
+            "id": 6789,
+            "source": "디스커버리",
+            "target": "매스이펙트",
+            "value": 2
+        },
+        {
+            "id": 6792,
+            "source": "디스커버리",
+            "target": "스타트렉",
+            "value": 2
+        },
+        {
+            "id": 6794,
+            "source": "디스커버리",
+            "target": "시리즈",
+            "value": 2
+        },
+        {
+            "id": 6798,
+            "source": "디스커버리",
+            "target": "봣으면",
+            "value": 2
+        },
+        {
+            "id": 6799,
+            "source": "매스이펙트",
+            "target": "스타트렉",
+            "value": 2
+        },
+        {
+            "id": 6794,
+            "source": "매스이펙트",
+            "target": "시리즈",
+            "value": 2
+        },
+        {
+            "id": 6795,
+            "source": "매스이펙트",
+            "target": "봣으면",
+            "value": 2
+        },
+        {
+            "id": 6796,
+            "source": "시리즈",
+            "target": "봣으면",
+            "value": 2
+        },
+        {
+            "id": 6797,
+            "source": "커비",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6798,
+            "source": "커비",
+            "target": "택배",
+            "value": 2
+        },
+        {
+            "id": 6799,
+            "source": "커비",
+            "target": "포함",
+            "value": 2
+        },
+        {
+            "id": 6742,
+            "source": "커비",
+            "target": "약간",
+            "value": 2
+        },
+        {
+            "id": 6744,
+            "source": "커비",
+            "target": "흥정",
+            "value": 2
+        },
+        {
+            "id": 6748,
+            "source": "디스커버리",
+            "target": "택배",
+            "value": 2
+        },
+        {
+            "id": 6749,
+            "source": "디스커버리",
+            "target": "포함",
+            "value": 2
+        },
+        {
+            "id": 6744,
+            "source": "디스커버리",
+            "target": "약간",
+            "value": 2
+        },
+        {
+            "id": 6745,
+            "source": "디스커버리",
+            "target": "흥정",
+            "value": 2
+        },
+        {
+            "id": 6746,
+            "source": "택배",
+            "target": "포함",
+            "value": 2
+        },
+        {
+            "id": 6747,
+            "source": "택배",
+            "target": "약간",
+            "value": 2
+        },
+        {
+            "id": 6748,
+            "source": "택배",
+            "target": "흥정",
+            "value": 2
+        },
+        {
+            "id": 6749,
+            "source": "포함",
+            "target": "약간",
+            "value": 2
+        },
+        {
+            "id": 6752,
+            "source": "포함",
+            "target": "흥정",
+            "value": 2
+        },
+        {
+            "id": 6754,
+            "source": "약간",
+            "target": "흥정",
+            "value": 2
+        },
+        {
+            "id": 6758,
+            "source": "단체",
+            "target": "가습기",
+            "value": 4
+        },
+        {
+            "id": 6759,
+            "source": "단체",
+            "target": "살균제",
+            "value": 2
+        },
+        {
+            "id": 6754,
+            "source": "단체",
+            "target": "유해",
+            "value": 4
+        },
+        {
+            "id": 6755,
+            "source": "단체",
+            "target": "물질",
+            "value": 2
+        },
+        {
+            "id": 6756,
+            "source": "단체",
+            "target": "제대로",
+            "value": 2
+        },
+        {
+            "id": 6757,
+            "source": "단체",
+            "target": "표시",
+            "value": 2
+        },
+        {
+            "id": 6758,
+            "source": "단체",
+            "target": "제조",
+            "value": 4
+        },
+        {
+            "id": 6759,
+            "source": "단체",
+            "target": "유통",
+            "value": 2
+        },
+        {
+            "id": 6762,
+            "source": "단체",
+            "target": "책임자",
+            "value": 2
+        },
+        {
+            "id": 6764,
+            "source": "단체",
+            "target": "케미칼",
+            "value": 4
+        },
+        {
+            "id": 6768,
+            "source": "단체",
+            "target": "대표이사",
+            "value": 2
+        },
+        {
+            "id": 6769,
+            "source": "단체",
+            "target": "부회장",
+            "value": 4
+        },
+        {
+            "id": 6764,
+            "source": "단체",
+            "target": "창원",
+            "value": 2
+        },
+        {
+            "id": 6765,
+            "source": "단체",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6766,
+            "source": "단체",
+            "target": "옥시",
+            "value": 2
+        },
+        {
+            "id": 6767,
+            "source": "단체",
+            "target": "현직",
+            "value": 2
+        },
+        {
+            "id": 6768,
+            "source": "단체",
+            "target": "살균",
+            "value": 2
+        },
+        {
+            "id": 6769,
+            "source": "단체",
+            "target": "제품",
+            "value": 2
+        },
+        {
+            "id": 6772,
+            "source": "가습기",
+            "target": "살균제",
+            "value": 2
+        },
+        {
+            "id": 6774,
+            "source": "가습기",
+            "target": "유해",
+            "value": 4
+        },
+        {
+            "id": 6778,
+            "source": "가습기",
+            "target": "물질",
+            "value": 2
+        },
+        {
+            "id": 6779,
+            "source": "가습기",
+            "target": "제대로",
+            "value": 2
+        },
+        {
+            "id": 6774,
+            "source": "가습기",
+            "target": "표시",
+            "value": 2
+        },
+        {
+            "id": 6775,
+            "source": "가습기",
+            "target": "제조",
+            "value": 8
+        },
+        {
+            "id": 6776,
+            "source": "가습기",
+            "target": "유통",
+            "value": 2
+        },
+        {
+            "id": 6777,
+            "source": "가습기",
+            "target": "책임자",
+            "value": 2
+        },
+        {
+            "id": 6778,
+            "source": "가습기",
+            "target": "케미칼",
+            "value": 4
+        },
+        {
+            "id": 6779,
+            "source": "가습기",
+            "target": "대표이사",
+            "value": 2
+        },
+        {
+            "id": 6782,
+            "source": "가습기",
+            "target": "부회장",
+            "value": 4
+        },
+        {
+            "id": 6784,
+            "source": "가습기",
+            "target": "창원",
+            "value": 2
+        },
+        {
+            "id": 6788,
+            "source": "가습기",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6789,
+            "source": "가습기",
+            "target": "옥시",
+            "value": 2
+        },
+        {
+            "id": 6784,
+            "source": "가습기",
+            "target": "현직",
+            "value": 2
+        },
+        {
+            "id": 6785,
+            "source": "가습기",
+            "target": "가습기",
+            "value": 2
+        },
+        {
+            "id": 6786,
+            "source": "가습기",
+            "target": "살균",
+            "value": 4
+        },
+        {
+            "id": 6787,
+            "source": "가습기",
+            "target": "제품",
+            "value": 4
+        },
+        {
+            "id": 6788,
+            "source": "살균제",
+            "target": "유해",
+            "value": 4
+        },
+        {
+            "id": 6789,
+            "source": "살균제",
+            "target": "물질",
+            "value": 2
+        },
+        {
+            "id": 6792,
+            "source": "살균제",
+            "target": "제대로",
+            "value": 2
+        },
+        {
+            "id": 6794,
+            "source": "살균제",
+            "target": "표시",
+            "value": 2
+        },
+        {
+            "id": 6798,
+            "source": "살균제",
+            "target": "제조",
+            "value": 4
+        },
+        {
+            "id": 6799,
+            "source": "살균제",
+            "target": "유통",
+            "value": 2
+        },
+        {
+            "id": 6794,
+            "source": "살균제",
+            "target": "책임자",
+            "value": 2
+        },
+        {
+            "id": 6795,
+            "source": "살균제",
+            "target": "케미칼",
+            "value": 4
+        },
+        {
+            "id": 6796,
+            "source": "살균제",
+            "target": "대표이사",
+            "value": 2
+        },
+        {
+            "id": 6797,
+            "source": "살균제",
+            "target": "부회장",
+            "value": 4
+        },
+        {
+            "id": 6798,
+            "source": "살균제",
+            "target": "창원",
+            "value": 2
+        },
+        {
+            "id": 6799,
+            "source": "살균제",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6822,
+            "source": "살균제",
+            "target": "옥시",
+            "value": 2
+        },
+        {
+            "id": 6824,
+            "source": "살균제",
+            "target": "현직",
+            "value": 2
+        },
+        {
+            "id": 6828,
+            "source": "살균제",
+            "target": "가습기",
+            "value": 2
+        },
+        {
+            "id": 6829,
+            "source": "살균제",
+            "target": "살균",
+            "value": 2
+        },
+        {
+            "id": 6824,
+            "source": "살균제",
+            "target": "제품",
+            "value": 2
+        },
+        {
+            "id": 6825,
+            "source": "유해",
+            "target": "물질",
+            "value": 2
+        },
+        {
+            "id": 6826,
+            "source": "유해",
+            "target": "제대로",
+            "value": 2
+        },
+        {
+            "id": 6827,
+            "source": "유해",
+            "target": "표시",
+            "value": 2
+        },
+        {
+            "id": 6828,
+            "source": "유해",
+            "target": "제조",
+            "value": 8
+        },
+        {
+            "id": 6829,
+            "source": "유해",
+            "target": "유통",
+            "value": 2
+        },
+        {
+            "id": 6842,
+            "source": "유해",
+            "target": "책임자",
+            "value": 2
+        },
+        {
+            "id": 6844,
+            "source": "유해",
+            "target": "케미칼",
+            "value": 4
+        },
+        {
+            "id": 6848,
+            "source": "유해",
+            "target": "대표이사",
+            "value": 2
+        },
+        {
+            "id": 6849,
+            "source": "유해",
+            "target": "부회장",
+            "value": 4
+        },
+        {
+            "id": 6844,
+            "source": "유해",
+            "target": "창원",
+            "value": 2
+        },
+        {
+            "id": 6845,
+            "source": "유해",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6846,
+            "source": "유해",
+            "target": "옥시",
+            "value": 2
+        },
+        {
+            "id": 6847,
+            "source": "유해",
+            "target": "현직",
+            "value": 2
+        },
+        {
+            "id": 6848,
+            "source": "유해",
+            "target": "유해",
+            "value": 2
+        },
+        {
+            "id": 6849,
+            "source": "유해",
+            "target": "가습기",
+            "value": 4
+        },
+        {
+            "id": 6882,
+            "source": "유해",
+            "target": "살균",
+            "value": 4
+        },
+        {
+            "id": 6884,
+            "source": "유해",
+            "target": "제품",
+            "value": 4
+        },
+        {
+            "id": 6888,
+            "source": "물질",
+            "target": "제대로",
+            "value": 2
+        },
+        {
+            "id": 6889,
+            "source": "물질",
+            "target": "표시",
+            "value": 2
+        },
+        {
+            "id": 6884,
+            "source": "물질",
+            "target": "제조",
+            "value": 4
+        },
+        {
+            "id": 6885,
+            "source": "물질",
+            "target": "유통",
+            "value": 2
+        },
+        {
+            "id": 6886,
+            "source": "물질",
+            "target": "책임자",
+            "value": 2
+        },
+        {
+            "id": 6887,
+            "source": "물질",
+            "target": "케미칼",
+            "value": 4
+        },
+        {
+            "id": 6888,
+            "source": "물질",
+            "target": "대표이사",
+            "value": 2
+        },
+        {
+            "id": 6889,
+            "source": "물질",
+            "target": "부회장",
+            "value": 4
+        },
+        {
+            "id": 6892,
+            "source": "물질",
+            "target": "창원",
+            "value": 2
+        },
+        {
+            "id": 6894,
+            "source": "물질",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6898,
+            "source": "물질",
+            "target": "옥시",
+            "value": 2
+        },
+        {
+            "id": 6899,
+            "source": "물질",
+            "target": "현직",
+            "value": 2
+        },
+        {
+            "id": 6894,
+            "source": "물질",
+            "target": "유해",
+            "value": 2
+        },
+        {
+            "id": 6895,
+            "source": "물질",
+            "target": "가습기",
+            "value": 2
+        },
+        {
+            "id": 6896,
+            "source": "물질",
+            "target": "살균",
+            "value": 2
+        },
+        {
+            "id": 6897,
+            "source": "물질",
+            "target": "제품",
+            "value": 2
+        },
+        {
+            "id": 6898,
+            "source": "제대로",
+            "target": "표시",
+            "value": 2
+        },
+        {
+            "id": 6899,
+            "source": "제대로",
+            "target": "제조",
+            "value": 4
+        },
+        {
+            "id": 6842,
+            "source": "제대로",
+            "target": "유통",
+            "value": 2
+        },
+        {
+            "id": 6844,
+            "source": "제대로",
+            "target": "책임자",
+            "value": 2
+        },
+        {
+            "id": 6848,
+            "source": "제대로",
+            "target": "케미칼",
+            "value": 4
+        },
+        {
+            "id": 6849,
+            "source": "제대로",
+            "target": "대표이사",
+            "value": 2
+        },
+        {
+            "id": 6844,
+            "source": "제대로",
+            "target": "부회장",
+            "value": 4
+        },
+        {
+            "id": 6845,
+            "source": "제대로",
+            "target": "창원",
+            "value": 2
+        },
+        {
+            "id": 6846,
+            "source": "제대로",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6847,
+            "source": "제대로",
+            "target": "옥시",
+            "value": 2
+        },
+        {
+            "id": 6848,
+            "source": "제대로",
+            "target": "현직",
+            "value": 2
+        },
+        {
+            "id": 6849,
+            "source": "제대로",
+            "target": "유해",
+            "value": 2
+        },
+        {
+            "id": 6852,
+            "source": "제대로",
+            "target": "가습기",
+            "value": 2
+        },
+        {
+            "id": 6854,
+            "source": "제대로",
+            "target": "살균",
+            "value": 2
+        },
+        {
+            "id": 6858,
+            "source": "제대로",
+            "target": "제품",
+            "value": 2
+        },
+        {
+            "id": 6859,
+            "source": "표시",
+            "target": "제조",
+            "value": 4
+        },
+        {
+            "id": 6854,
+            "source": "표시",
+            "target": "유통",
+            "value": 2
+        },
+        {
+            "id": 6855,
+            "source": "표시",
+            "target": "책임자",
+            "value": 2
+        },
+        {
+            "id": 6856,
+            "source": "표시",
+            "target": "케미칼",
+            "value": 4
+        },
+        {
+            "id": 6857,
+            "source": "표시",
+            "target": "대표이사",
+            "value": 2
+        },
+        {
+            "id": 6858,
+            "source": "표시",
+            "target": "부회장",
+            "value": 4
+        },
+        {
+            "id": 6859,
+            "source": "표시",
+            "target": "창원",
+            "value": 2
+        },
+        {
+            "id": 6862,
+            "source": "표시",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6864,
+            "source": "표시",
+            "target": "옥시",
+            "value": 2
+        },
+        {
+            "id": 6868,
+            "source": "표시",
+            "target": "현직",
+            "value": 2
+        },
+        {
+            "id": 6869,
+            "source": "표시",
+            "target": "유해",
+            "value": 2
+        },
+        {
+            "id": 6864,
+            "source": "표시",
+            "target": "가습기",
+            "value": 2
+        },
+        {
+            "id": 6865,
+            "source": "표시",
+            "target": "살균",
+            "value": 2
+        },
+        {
+            "id": 6866,
+            "source": "표시",
+            "target": "제품",
+            "value": 2
+        },
+        {
+            "id": 6867,
+            "source": "제조",
+            "target": "유통",
+            "value": 2
+        },
+        {
+            "id": 6868,
+            "source": "제조",
+            "target": "책임자",
+            "value": 2
+        },
+        {
+            "id": 6869,
+            "source": "제조",
+            "target": "케미칼",
+            "value": 4
+        },
+        {
+            "id": 6872,
+            "source": "제조",
+            "target": "대표이사",
+            "value": 2
+        },
+        {
+            "id": 6874,
+            "source": "제조",
+            "target": "부회장",
+            "value": 4
+        },
+        {
+            "id": 6878,
+            "source": "제조",
+            "target": "창원",
+            "value": 2
+        },
+        {
+            "id": 6879,
+            "source": "제조",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6874,
+            "source": "제조",
+            "target": "옥시",
+            "value": 2
+        },
+        {
+            "id": 6875,
+            "source": "제조",
+            "target": "현직",
+            "value": 2
+        },
+        {
+            "id": 6876,
+            "source": "제조",
+            "target": "유해",
+            "value": 2
+        },
+        {
+            "id": 6877,
+            "source": "제조",
+            "target": "가습기",
+            "value": 2
+        },
+        {
+            "id": 6878,
+            "source": "제조",
+            "target": "살균",
+            "value": 2
+        },
+        {
+            "id": 6879,
+            "source": "제조",
+            "target": "제품",
+            "value": 2
+        },
+        {
+            "id": 6882,
+            "source": "제조",
+            "target": "제조",
+            "value": 2
+        },
+        {
+            "id": 6884,
+            "source": "유통",
+            "target": "책임자",
+            "value": 2
+        },
+        {
+            "id": 6888,
+            "source": "유통",
+            "target": "케미칼",
+            "value": 4
+        },
+        {
+            "id": 6889,
+            "source": "유통",
+            "target": "대표이사",
+            "value": 2
+        },
+        {
+            "id": 6884,
+            "source": "유통",
+            "target": "부회장",
+            "value": 4
+        },
+        {
+            "id": 6885,
+            "source": "유통",
+            "target": "창원",
+            "value": 2
+        },
+        {
+            "id": 6886,
+            "source": "유통",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6887,
+            "source": "유통",
+            "target": "옥시",
+            "value": 2
+        },
+        {
+            "id": 6888,
+            "source": "유통",
+            "target": "현직",
+            "value": 2
+        },
+        {
+            "id": 6889,
+            "source": "유통",
+            "target": "유해",
+            "value": 2
+        },
+        {
+            "id": 6892,
+            "source": "유통",
+            "target": "가습기",
+            "value": 2
+        },
+        {
+            "id": 6894,
+            "source": "유통",
+            "target": "살균",
+            "value": 2
+        },
+        {
+            "id": 6898,
+            "source": "유통",
+            "target": "제품",
+            "value": 2
+        },
+        {
+            "id": 6899,
+            "source": "유통",
+            "target": "제조",
+            "value": 2
+        },
+        {
+            "id": 6894,
+            "source": "책임자",
+            "target": "케미칼",
+            "value": 4
+        },
+        {
+            "id": 6895,
+            "source": "책임자",
+            "target": "대표이사",
+            "value": 2
+        },
+        {
+            "id": 6896,
+            "source": "책임자",
+            "target": "부회장",
+            "value": 4
+        },
+        {
+            "id": 6897,
+            "source": "책임자",
+            "target": "창원",
+            "value": 2
+        },
+        {
+            "id": 6898,
+            "source": "책임자",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6899,
+            "source": "책임자",
+            "target": "옥시",
+            "value": 2
+        },
+        {
+            "id": 6922,
+            "source": "책임자",
+            "target": "현직",
+            "value": 2
+        },
+        {
+            "id": 6924,
+            "source": "책임자",
+            "target": "유해",
+            "value": 2
+        },
+        {
+            "id": 6928,
+            "source": "책임자",
+            "target": "가습기",
+            "value": 2
+        },
+        {
+            "id": 6929,
+            "source": "책임자",
+            "target": "살균",
+            "value": 2
+        },
+        {
+            "id": 6924,
+            "source": "책임자",
+            "target": "제품",
+            "value": 2
+        },
+        {
+            "id": 6925,
+            "source": "책임자",
+            "target": "제조",
+            "value": 2
+        },
+        {
+            "id": 6926,
+            "source": "케미칼",
+            "target": "대표이사",
+            "value": 2
+        },
+        {
+            "id": 6927,
+            "source": "케미칼",
+            "target": "부회장",
+            "value": 4
+        },
+        {
+            "id": 6928,
+            "source": "케미칼",
+            "target": "창원",
+            "value": 2
+        },
+        {
+            "id": 6929,
+            "source": "케미칼",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6942,
+            "source": "케미칼",
+            "target": "옥시",
+            "value": 2
+        },
+        {
+            "id": 6944,
+            "source": "케미칼",
+            "target": "케미칼",
+            "value": 2
+        },
+        {
+            "id": 6948,
+            "source": "케미칼",
+            "target": "현직",
+            "value": 4
+        },
+        {
+            "id": 6949,
+            "source": "케미칼",
+            "target": "유해",
+            "value": 4
+        },
+        {
+            "id": 6944,
+            "source": "케미칼",
+            "target": "가습기",
+            "value": 4
+        },
+        {
+            "id": 6945,
+            "source": "케미칼",
+            "target": "살균",
+            "value": 4
+        },
+        {
+            "id": 6946,
+            "source": "케미칼",
+            "target": "제품",
+            "value": 4
+        },
+        {
+            "id": 6947,
+            "source": "케미칼",
+            "target": "제조",
+            "value": 4
+        },
+        {
+            "id": 6948,
+            "source": "대표이사",
+            "target": "부회장",
+            "value": 4
+        },
+        {
+            "id": 6949,
+            "source": "대표이사",
+            "target": "창원",
+            "value": 2
+        },
+        {
+            "id": 6982,
+            "source": "대표이사",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6984,
+            "source": "대표이사",
+            "target": "옥시",
+            "value": 2
+        },
+        {
+            "id": 6988,
+            "source": "대표이사",
+            "target": "케미칼",
+            "value": 2
+        },
+        {
+            "id": 6989,
+            "source": "대표이사",
+            "target": "현직",
+            "value": 2
+        },
+        {
+            "id": 6984,
+            "source": "대표이사",
+            "target": "유해",
+            "value": 2
+        },
+        {
+            "id": 6985,
+            "source": "대표이사",
+            "target": "가습기",
+            "value": 2
+        },
+        {
+            "id": 6986,
+            "source": "대표이사",
+            "target": "살균",
+            "value": 2
+        },
+        {
+            "id": 6987,
+            "source": "대표이사",
+            "target": "제품",
+            "value": 2
+        },
+        {
+            "id": 6988,
+            "source": "대표이사",
+            "target": "제조",
+            "value": 2
+        },
+        {
+            "id": 6989,
+            "source": "부회장",
+            "target": "창원",
+            "value": 2
+        },
+        {
+            "id": 6992,
+            "source": "부회장",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6994,
+            "source": "부회장",
+            "target": "부회장",
+            "value": 2
+        },
+        {
+            "id": 6998,
+            "source": "부회장",
+            "target": "옥시",
+            "value": 4
+        },
+        {
+            "id": 6999,
+            "source": "부회장",
+            "target": "케미칼",
+            "value": 4
+        },
+        {
+            "id": 6994,
+            "source": "부회장",
+            "target": "현직",
+            "value": 4
+        },
+        {
+            "id": 6995,
+            "source": "부회장",
+            "target": "유해",
+            "value": 4
+        },
+        {
+            "id": 6996,
+            "source": "부회장",
+            "target": "가습기",
+            "value": 4
+        },
+        {
+            "id": 6997,
+            "source": "부회장",
+            "target": "살균",
+            "value": 4
+        },
+        {
+            "id": 6998,
+            "source": "부회장",
+            "target": "제품",
+            "value": 4
+        },
+        {
+            "id": 6999,
+            "source": "부회장",
+            "target": "제조",
+            "value": 4
+        },
+        {
+            "id": 6942,
+            "source": "창원",
+            "target": "디스커버리",
+            "value": 2
+        },
+        {
+            "id": 6944,
+            "source": "창원",
+            "target": "부회장",
+            "value": 2
+        },
+        {
+            "id": 6948,
+            "source": "창원",
+            "target": "옥시",
+            "value": 2
+        },
+        {
+            "id": 6949,
+            "source": "창원",
+            "target": "케미칼",
+            "value": 2
+        },
+        {
+            "id": 6944,
+            "source": "창원",
+            "target": "현직",
+            "value": 2
+        },
+        {
+            "id": 6945,
+            "source": "창원",
+            "target": "유해",
+            "value": 2
+        },
+        {
+            "id": 6946,
+            "source": "창원",
+            "target": "가습기",
+            "value": 2
+        },
+        {
+            "id": 6947,
+            "source": "창원",
+            "target": "살균",
+            "value": 2
+        },
+        {
+            "id": 6948,
+            "source": "창원",
+            "target": "제품",
+            "value": 2
+        },
+        {
+            "id": 6949,
+            "source": "창원",
+            "target": "제조",
+            "value": 2
+        },
+        {
+            "id": 6952,
+            "source": "디스커버리",
+            "target": "부회장",
+            "value": 2
+        },
+        {
+            "id": 6954,
+            "source": "디스커버리",
+            "target": "옥시",
+            "value": 2
+        },
+        {
+            "id": 6958,
+            "source": "디스커버리",
+            "target": "케미칼",
+            "value": 2
+        },
+        {
+            "id": 6959,
+            "source": "디스커버리",
+            "target": "현직",
+            "value": 2
+        },
+        {
+            "id": 6954,
+            "source": "디스커버리",
+            "target": "유해",
+            "value": 2
+        },
+        {
+            "id": 6955,
+            "source": "디스커버리",
+            "target": "가습기",
+            "value": 2
+        },
+        {
+            "id": 6956,
+            "source": "디스커버리",
+            "target": "살균",
+            "value": 2
+        },
+        {
+            "id": 6957,
+            "source": "디스커버리",
+            "target": "제품",
+            "value": 2
+        },
+        {
+            "id": 6958,
+            "source": "디스커버리",
+            "target": "제조",
+            "value": 2
+        },
+        {
+            "id": 6959,
+            "source": "옥시",
+            "target": "케미칼",
+            "value": 2
+        },
+        {
+            "id": 6962,
+            "source": "옥시",
+            "target": "현직",
+            "value": 2
+        },
+        {
+            "id": 6964,
+            "source": "옥시",
+            "target": "유해",
+            "value": 2
+        },
+        {
+            "id": 6968,
+            "source": "옥시",
+            "target": "가습기",
+            "value": 2
+        },
+        {
+            "id": 6969,
+            "source": "옥시",
+            "target": "살균",
+            "value": 2
+        },
+        {
+            "id": 6964,
+            "source": "옥시",
+            "target": "제품",
+            "value": 2
+        },
+        {
+            "id": 6965,
+            "source": "옥시",
+            "target": "제조",
+            "value": 2
+        },
+        {
+            "id": 6966,
+            "source": "현직",
+            "target": "유해",
+            "value": 2
+        },
+        {
+            "id": 6967,
+            "source": "현직",
+            "target": "가습기",
+            "value": 2
+        },
+        {
+            "id": 6968,
+            "source": "현직",
+            "target": "살균",
+            "value": 2
+        },
+        {
+            "id": 6969,
+            "source": "현직",
+            "target": "제품",
+            "value": 2
+        },
+        {
+            "id": 6972,
+            "source": "현직",
+            "target": "제조",
+            "value": 2
+        },
+        {
+            "id": 6974,
+            "source": "살균",
+            "target": "제품",
+            "value": 2
+        },
+        {
+            "id": 6978,
+            "source": "살균",
+            "target": "제조",
+            "value": 2
+        },
+        {
+            "id": 6979,
+            "source": "제품",
+            "target": "제조",
+            "value": 2
+        }
+    ]
+}

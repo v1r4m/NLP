@@ -1,7 +1,7 @@
 import { useD3 } from "./useD3";
 import React from "react";
 import * as d3 from "d3";
-import data from "./miserables";
+import data from "./test";
 
 function clamp(x, lo, hi) {
   return x < lo ? lo : x > hi ? hi : x;
